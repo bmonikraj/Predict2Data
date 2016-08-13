@@ -1,0 +1,68 @@
+
+						RELEASE NOTE
+
+Platform - Windows
+-----------------------------------------------------------------------------------------------------------
+
+
+SOFTWARE NAME  - Predict2Data
+
+NOTE - 1)If you have already installed Python 2.7.11 , then you should cancel the installation of Python 2.7.11 when asked for
+       2)If you have already installed Python 2.7.11 , then make sure that you have set the path of python.exe in the User 
+        defined variable of Environment variables with Path_Name = python and Path_Value=Drive:\Directory_Name_Of_Python27
+	3)If python not installed, then clicking on Predict2DataInstall.bat will install it. Make sure that after installation
+	 path variable in Environment varibale with Path_Name = python and Path_Value=Drive:\Directory_Name_Of_Python27	
+***) You can run the application after clicking on Predict2DataExe.bat
+
+1. Functions of the widgets on the layout.
+
+	
+	Open button - It will allow the user to open a file from his/her computer using file explorer. 
+		     
+		      Note - # It will only open .csv extension files. Else error message will be shown.
+		   	     
+			     # In the CSV file, the first column should have X values with a proper column
+			       header and the second columns should have Y values along with a similar
+			       column header.
+	
+	Plot button - It will plot a graph between input on x-axis and output on y-axis.
+	
+	Degree input - After the plot function is executed. The graph of the will be shown to the user 
+		       corresponding X and Y values. The degree of a function is the highest power of  
+		       the variable in it. Different degree functions have different characteristic
+		       plot of the graph. The user has to identify the degree of the function from the 
+		       graph and enter it in the space given.
+	
+	Start Regression button - After entering the degree of the function the user can hit the 
+				  start regression button which will start the regression function
+				  and show a message upon successful regression of the function.
+
+	X value input - In this text field, the user has to enter his/her desired input or X value
+			to get the output or Y value.
+
+	Go button - After entering the desired X-value in the label by the user, this button will execute
+		    its specific function to predict the corresponding Y-value and display it in the 
+		    desired space.
+	
+
+2. OS requirement
+
+
+	Source code of this software is written in Python programming language with Tkinter for GUI.
+	This is software will run on Windows and Linux operating systems.
+
+
+3. Target audience
+
+
+	The output values of a sensor, like a gas sensor or temperature sensor, are never constant. 
+	It doesnot have a predefined function for its values nor its easy to define a function for its
+	output values. So we are not able to get the output values of the sensors with any of our own
+	desired input values without practically testing them. This software enables a user to get a 
+	corresponding output value of a sensor when he/she enters a desired input value. 
+	The user has to find the degree of the function from the graph and enter it. It then uses 
+	regression function predict the output value of the sensor for a specifc input value entered 
+	by the user.
+
+	Note - This software can correctly predict the output value of a sensor having continuous values only.
+	       For sensors having discrete output values, this software cannot predict correct values.
